@@ -1,0 +1,16 @@
+# See https://atom.io/docs/latest/creating-a-package#menus for more details
+'context-menu':
+  '.overlayer':
+      'Enable highlight-cov': 'highlight-cov:toggle'
+
+'menu': [
+  {
+    'label': 'Packages'
+    'submenu': [
+      'label': 'highlight-cov'
+      'submenu': [
+        { 'label': 'Toggle', 'command': 'highlight-cov:toggle' }
+      ]
+    ]
+  }
+]
