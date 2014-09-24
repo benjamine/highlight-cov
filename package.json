@@ -1,7 +1,7 @@
 {
   "name": "highlight-cov",
   "main": "./lib/highlight-cov",
-  "version": "0.0.2",
+  "version": "0.1.0",
   "description": "Highlight lines based on test coverage",
   "activationEvents": [
     "highlight-cov:toggle"
