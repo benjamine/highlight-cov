@@ -48,7 +48,7 @@ class HighlightCovView extends View
       return
 
     parse infoFilePath, (err, data) =>
-      fileData = (data.filter (f) => (filePath.substr(0, f.file.length) == f.file))[0]
+      fileData = (data.filter (f) => (filePath.substr(filePath.length - f.file.length) == f.file))[0]
       if not fileData
         console.log 'no coverage info found for this file'
         return
